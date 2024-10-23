@@ -3,14 +3,16 @@
 #
 
 # Name of your site (displayed in the header)
-name: CloudSkin Estética Natural
+name: CLOUDSKIN Estética Natural
 
 # Short bio or description (displayed in the header)
-description: Realce sua beleza, realce sua essência.
+description: Realce sua beleza, respeite sua essência.
 
-# URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
+# name of logo image in the images directory
+logo: logo-azul-medium.png
 
+# Link to send message on WhatsApp
+whatsappLink: https://api.whatsapp.com/send?phone=5548991233464&text=Ol%C3%A1!%20%F0%9F%98%80%20Vim%20atrav%C3%A9s%20do%20seu%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20os%20servi%C3%A7os%20de%20est%C3%A9tica%20corporal%20e%20facial%20oferecidos%20pela%20cl%C3%ADnica.%20%F0%9F%92%86%E2%80%8D%E2%99%80%EF%B8%8F%E2%9C%A8%20%E2%98%81%EF%B8%8F
 #
 # Flags below are optional
 #
@@ -41,7 +43,7 @@ google_analytics: G-29YS5HG3Y5
 
 # Your website URL (e.g. http://barryclark.github.io or http://www.barryclark.co)
 # Used for Sitemap.xml and your RSS feed
-url: https://cloudskinestetica.com/
+url: https://cloudskinestetica.com
 
 # If you're hosting your site at a Project repository on GitHub pages
 # (http://yourusername.github.io/repository-name)

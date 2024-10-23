@@ -5,34 +5,44 @@
 
     {% include meta.html %}
 
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
     <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
-  </head>
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
   <body>
     <div class="wrapper-masthead">
       <div class="container">
         <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+          <a href="{{ site.baseurl }}/" class="site-avatar"><img alt="CloudSkin Estética Natural"  src="{{ site.baseurl }}/images/{{site.logo}}" /></a>
 
           <div class="site-info">
-            <h1 class="site-name"><a href="{{ site.baseurl }}/">{{ site.name }}</a></h1>
-            <p class="site-description">{{ site.description }}</p>
+            <h1 class="site-name"><a href="{{ site.baseurl }}/">CLOUD<b>SKIN</b> <!-- <span>Estética Natural</span> --></a></h1>
           </div>
 
           <nav>
-            <a href="{{ site.baseurl }}/">Blog</a>
-            <a href="{{ site.baseurl }}/about">About</a>
+            <a href="{{ site.baseurl }}/#sobre">Sobre</a>
+            <a href="{{ site.baseurl }}/#cllinica">Clínica</a>
+            <a href="{{ site.baseurl }}/#servicos">Serviços</a>
+            <a id="fale-conosco" href="{{ site.whatsappLink }}">CONTATO</a>
           </nav>
         </header>
       </div>
     </div>
+
+    <section id="splash">
+      <div class="box box-with-img"><img  src="/images/man-woman.png" alt="Rosto de homem e mulher"/>
+      </div>
+      <div class="box splash-right">
+        <h2 class="cloudskin">CLOUD<b>SKIN</b></h2>
+        <h5 class="estetica-natural">Estética Natural</h5>
+        <p class="site-description playwrite-gb-s-200"><span class="nowrap">Realce sua beleza,</span><wbr /> <span class="nowrap">respeite sua essência</span></p>
+        <a href="{{ site.whatsappLink }}">Agendar Avaliação</a>
+      </div>
+    </section>
 
     <div id="main" role="main" class="container">
       {{ content }}
