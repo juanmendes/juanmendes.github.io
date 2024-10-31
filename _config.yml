@@ -19,6 +19,7 @@ whatsappLink: https://api.whatsapp.com/send?phone=5548991233464&text=Ol%C3%A1!%2
 
 # Includes an icon in the footer for each username you enter
 footer-links:
+  whats: true
   dribbble:
   email: contato@cloudskinestetica.com
   facebook:
