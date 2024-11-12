@@ -19,9 +19,7 @@ html {
 
 body {
   font: 18px/1.4 $helvetica;
-//  color: $darkGray;
-  background-image: linear-gradient( 135%, #ffffff 0%, #eee 100% );
-  background-size: cover;
+  color: $darkGray;
 }
 
 .container {
@@ -31,7 +29,7 @@ body {
 }
 
 #main.container {
-  max-width: 740px;
+  max-width: 940px;
   // box-shadow: 0 0 8px 0 rgba(96, 128, 143, 0.731);
 }
 
@@ -43,6 +41,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.7;
   margin: 1em 0 15px;
   padding: 0;
+  text-transform: uppercase;
 
   // @include mobile {
   //   line-height: 1.4;
@@ -62,16 +61,21 @@ h1 {
 }
 
 h2 {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 30px;
+  color: $darkBlue;
+  border-image: linear-gradient(to right, rgb(59, 119, 223), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 5;
+  border-bottom: 3px solid darkblue;
 }
 
 h4 {
-  font-size: 18px;
-  color: $gray;
+  color: $darkBlue;
+  font-size: 20px;
+  border-image: linear-gradient(to right, rgb(170, 191, 229), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)) 5;
+  border-bottom: 3px solid darkblue;
 }
 
 p {
@@ -211,7 +215,6 @@ img {
 }
 
 section#splash {
-  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7abcff+0,60abf8+44,4096ee+100;Blue+3D+%2314 */
   background: linear-gradient(to right, rgb(46, 147, 249) 0%, rgb(96, 171, 248) 44%, rgb(64, 150, 238) 100%);
   background-size: 300% 100%;
   animation: moveGradient 10s linear infinite;
@@ -316,7 +319,13 @@ section#splash {
   }
 }
 
-
+img.cloudskin-logo {
+  float: right;
+  margin-left: 150px;
+  margin-top: 15px;
+  width: 200px;
+  opacity: 10%;
+}
 
 
 @keyframes moveGradient {
