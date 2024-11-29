@@ -5,15 +5,15 @@
 
     {% include meta.html %}
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css?build={{site.version}}}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
 
     <!-- Created with Jekyll Now - http://github.com/barryclark/jekyll-now -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" >
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="{{ site.baseurl }}/images/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ site.baseurl }}/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="{{ site.baseurl }}/images/favicon-16x16.png">
@@ -62,5 +62,28 @@
     </div>
 
     {% include analytics.html %}
+
+    <script type="module">
+        import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs'
+
+        const swiper = new Swiper('.swiper', {
+          // Optional parameters,
+          loop: true,
+
+          centeredSlides: true,
+
+          // If we need pagination
+          pagination: {
+            el: '.swiper-pagination',
+          },
+
+          // Navigation arrows
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          }
+
+        });
+    </script>
   </body>
 </html>
